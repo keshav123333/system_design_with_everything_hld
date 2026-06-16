@@ -7,7 +7,7 @@
 <img width="516" height="220" alt="image" src="https://github.com/user-attachments/assets/0449c011-4adb-4cf1-9251-3f195f7a5395" />
 like you can see in this code application code is the frontend code which is also deployer on a server from where we fetch it and use it  and when applcation code fetch info it store some info in cache which is frequently being used 
 
-----
+****
 
 <img width="369" height="174" alt="image" src="https://github.com/user-attachments/assets/1193d5f3-5f0e-457e-8e19-6c7c1d8736bb" />
 like now see this image 
