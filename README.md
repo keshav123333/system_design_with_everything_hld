@@ -16,3 +16,17 @@ like now see this image in this our application frontend code is pressent at two
 ****
 4. Message que -: used in server and all or its third party tool used by our application server to perform any task 
  like example our site have work when customer order do threet hing plcae ordr send sms and sne email now all this task can be ascynchronously handlesd how this happen so all this task is feeded in msg que and whenever anytask comlted it notify the server and do other task this msg que automatically manage if errror unko retry and all kathis do all this 
+
+----
+
+## data extensive application 
+
+like this type of application tackle and heavy rely ondata so they have to manage this insta for ex need to handle so many user they write and read continously and they perform different task they have cache the memory so latency can be reduced and all 
+
+**** 
+## compute extensive appplication 
+
+ex some site heavely rely on cpu processing and gpu processing for the task to be performed eg chagpt use llm model at backgorund ml based website here most developer worries abt these things 
+<img width="546" height="281" alt="image" src="https://github.com/user-attachments/assets/e6f61458-7f0e-497d-9f98-efc9d05c104f" />
+ example youtube : it data extensive as need to show videos fetch and post new videos 
+ but it also compute extensive as it have to run recomendation model in background which is using its power  
