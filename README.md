@@ -75,5 +75,10 @@ so like
 nesting : its a technique where you send data {"mesage":123} like this and in body
 filtering : when u send datathrough url user?toke=skkskks like this or user/{id} like this in bakcend 
 
+
 <img width="484" height="281" alt="image" src="https://github.com/user-attachments/assets/645f8175-b1c3-4275-8154-1cd29a99627f" />
 so like u can see above that path means when u send data info u want in url ex there is api user/{id} now it fetch id in backend this id can be what_is_java so now backend u fetch info related to id and give to frontend so for same forntend diff data can be shown its used in insta profile too where u can see that url ur username is changes and hit same endpoint so its the case at same endpoint u can see multiple things 
+
+-> Query parameter u send query and at backend u handle it like sort=asc so backend u handle if ac then sort the blog in asceneding etc 
+-> body u send whole data 
+<img width="413" height="300" alt="image" src="https://github.com/user-attachments/assets/14a96d55-bb47-4216-b261-40336c776670" />
