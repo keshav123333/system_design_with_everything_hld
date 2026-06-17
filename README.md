@@ -82,3 +82,52 @@ so like u can see above that path means when u send data info u want in url ex t
 -> Query parameter u send query and at backend u handle it like sort=asc so backend u handle if ac then sort the blog in asceneding etc 
 -> body u send whole data 
 <img width="413" height="300" alt="image" src="https://github.com/user-attachments/assets/14a96d55-bb47-4216-b261-40336c776670" />
+200 OK → Success
+201 Created → Resource created
+204 No Content → Success, nothing returned
+400 Bad Request → Client sent invalid data
+401 Unauthorized → Authentication required/failed
+403 Forbidden → Authenticated but not allowed
+404 Not Found → Resource doesn't exist
+500 Internal Server Error → Server-side problem
+
+
+------
+# databse 
+ <img width="488" height="201" alt="image" src="https://github.com/user-attachments/assets/b7c097f7-26a8-4821-9dd5-26c2957207e3" />
+so as ypu can see in sql based tbles is used whereas in nosql based data files folder is used to store the info 
+
+
+## sql based 
+<img width="561" height="387" alt="image" src="https://github.com/user-attachments/assets/3b1cd38f-ba43-4252-b385-74277d0652e5" />
+4.  foreign key : col in a table refrence to some other col in othr table or same table 
+5. default : this is used to give default value to a col 
+
+
+then thre is join 
+<img width="534" height="386" alt="image" src="https://github.com/user-attachments/assets/adb5f28d-35d4-4f28-b5c4-3abb4af6382e" />
+
+here u seprate the table and other things from each other llike student and courses are seprate tables then u make a new table connecting both 
+
+This down here is one -one relation
+<img width="624" height="324" alt="image" src="https://github.com/user-attachments/assets/5992c5bf-ab6e-479c-9ee6-5a5f69127b03" />
+ in this as u can see we created seprate table for video image and all and then at end we attach both of them with each other 
+
+ Disadvantges of sql 
+ as this for everything we have to vreate a table then attach taht table and connect so it need space scaling is an issue 
+ why? 
+ vertical scaling we add more space in same server but this limited as i mean how much u can add to single server 
+ horizontal scaling u distribute your data in different server now as they are connected maintaing reln is hard like user table in some other db and post id tble in some other server 
+
+ 2. in sql like if your table column data type is seted as dict you can add fix no. of info ,
+no sql use document to store info 
+ in nosql  no limitation like in user is  dict so now dict can be of variable size so nosql is used where data scehma is not an issue  so that we can follow how evere you wnat to store your data 
+<img width="602" height="426" alt="image" src="https://github.com/user-attachments/assets/ea192405-91d8-4f91-a277-b1c5fe91aa08" />
+
+## No sql 
+<img width="471" height="379" alt="image" src="https://github.com/user-attachments/assets/d6b2a52c-41d0-4a00-b198-d5d5387badd2" />
+
+
+
+
+
