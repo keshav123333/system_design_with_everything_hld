@@ -69,4 +69,11 @@ so u have a db and a backend now imdb example ke liye so now imdb can build a ap
 2. soap: its uses xml its is not used widely now but some leagcy website still used it as its bulky and we have to handle attributes
 3. graphql : in this only one end point is there through which u fetch info how ?
    it bascially use query like frontend give query this single end point recive and excute the query like sql but for api so now frontend will send query and graphql through one endpoint handle it
-4. grpc remote protocol call (grpc): so its lighter then json protocol buffer size is small and used in kicroservice where ur single app is devided into microservice so as these small compo have to communicate to each other for this this use grpc as it fast and these service have to communicate fast so that can give result fast to end user 
+4. grpc remote protocol call (grpc): so its lighter then json protocol buffer size is small and used in kicroservice where ur single app is devided into microservice so as these small compo have to communicate to each other for this this use grpc as it fast and these service have to communicate fast so that can give result fast to end user
+
+so like 
+nesting : its a technique where you send data {"mesage":123} like this and in body
+filtering : when u send datathrough url user?toke=skkskks like this or user/{id} like this in bakcend 
+
+<img width="484" height="281" alt="image" src="https://github.com/user-attachments/assets/645f8175-b1c3-4275-8154-1cd29a99627f" />
+so like u can see above that path means when u send data info u want in url ex there is api user/{id} now it fetch id in backend this id can be what_is_java so now backend u fetch info related to id and give to frontend so for same forntend diff data can be shown its used in insta profile too where u can see that url ur username is changes and hit same endpoint so its the case at same endpoint u can see multiple things 
