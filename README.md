@@ -61,5 +61,12 @@ os browser and dns all three have cache in them where they save most used site i
 # Api Interface 
 so u have a db and a backend now imdb example ke liye so now imdb can build a api for his db through which other can also acess data as we cant give acess of db to others as he can delte and things and using api we can restrict what to add and what not it act as protective layer and it also easy for other user to use api instead of using imdb full db
 
-2. we also build backend frontend seprate so now frontend can call bakcend we can coide bakcend in any alguage we want and frontend in different langage
-3. 
+1. we also build backend frontend seprate so now frontend can call bakcend we can coide bakcend in any alguage we want and frontend in different langage
+
+
+**Types of api**:
+1. Rest: so rest bascially use json get post and all this is rest
+2. soap: its uses xml its is not used widely now but some leagcy website still used it as its bulky and we have to handle attributes
+3. graphql : in this only one end point is there through which u fetch info how ?
+   it bascially use query like frontend give query this single end point recive and excute the query like sql but for api so now frontend will send query and graphql through one endpoint handle it
+4. grpc remote protocol call (grpc): so its lighter then json protocol buffer size is small and used in kicroservice where ur single app is devided into microservice so as these small compo have to communicate to each other for this this use grpc as it fast and these service have to communicate fast so that can give result fast to end user 
