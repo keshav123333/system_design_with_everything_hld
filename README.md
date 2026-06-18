@@ -127,7 +127,51 @@ no sql use document to store info
 ## No sql 
 <img width="471" height="379" alt="image" src="https://github.com/user-attachments/assets/d6b2a52c-41d0-4a00-b198-d5d5387badd2" />
 
+# YAAR YAHA PE CACH WALA PART SAVE NI KIYA THA USKO VIDEO SE EK BAAR LIKH KE ADD KAR DE PLEASE AND SAMJH LE  AND YAHA PE NO SQL KA BHI MISSING HAI TYPES AND ALL VO BHI KAR LE 
 
 
 
 
+
+
+----
+
+
+# LAODA BALANCER 
+
+so google dont have only one server it have multiple server and dns dont give server ip add it give add of load balancer which then check and decide to which server to send this request 
+functions of load balancer :
+to choose server and observe maitain health of server 
+
+**methods to allocate req to server**:
+1. round robin : In this we basically sequentially give reqests to server and after last we once again go in starting and give request to strating server so its a cycle where every server will get equal amt of work
+Disadv: as not all sevrer will have same specs and config : some server will have more ram cpu and processing power and some have less we cant give all of them equal work
+
+2. geo based algo : it allot request to nearer sever like india will have its server and all request will go there mean load balacner choose nearer server
+disadv: load balancer should have info about which server is where like indian server then chinese server every server info load balncer should have
+- if a server near u is not working then it will allocate all work to other server but the server which is down should send all request to workig server that what requests and process it should process
+- db maintain for every country
+- vpn used then there can be issue as load blacner will hought its comming from some other place
+
+3. least connection algo: load balancer will give the requst to server which will have least request to process
+disadv first server is processig 20 heavy req ex ml req and other server is processing 50 light req like chat msg or etc but nownew req will gi to heavy req server which is not good as it will take time 
+
+4. least time algo: so it give req to server acc to their res time like on server res time is high so next req will be tranfer to it as at any server load inc its res time dec so load balacer will now give req to other server
+- it complex as load balcner have to claculate avg res time for evry server = no. of req/ time needed to process the req
+- it is used where we have to like get req fast like stock pred or google searches
+
+
+5. ip hash algo : in this we assign every server a ip range so now that server wil, handle req fron that range or ip but this is not good is s1 crash so req that it handling affected so s1 server have to then send all its session info to other server to maintain and i u add new server we have to config loadbalancer and server properly so that assign ip can go to that server
+disadv already told old leagacy apps still use but new app where backend and frontend is seprate we dont need this as jwt token is only needed and required
+
+6. weight round robin : in this we assign wieght to server hich have more specs so that it give priority to that server more
+
+load balcner in real world combine two or more algo and use it 
+
+### How load balancer check health
+1. active check in this u send req to server and if its giving request on time
+2. passive check u just check it health by asking it direct without giving request after time to time
+and for this too there are ways to do
+- intervals: u have to check ur server on certain intervals is it active
+- timout : like if a req is takign more then threshold time then check like one eq taking 10 sec to process but onavg all req only take few ms so check if the code failed or serve rproblem
+- threshold : after evry certain req check how much req fails if no. of failed req if more analysis why it fail does there any problem 
