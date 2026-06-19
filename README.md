@@ -251,4 +251,18 @@ like same if ur p1 contain db of car form 200 500 and it have blue cas from some
 disadv in this to he have tranverse to every db which inc load on db
 
 4. global index
-we maintain a global index of data if ser come for spefic first req go thier from thier it fetch where his target data is availabel and go thier direct 
+we maintain a global index of data if ser come for spefic first req go thier from thier it fetch where his target data is availabel and go thier direct
+
+------
+# cap theorm 
+c-consistency
+a- availablity
+p - partition tolerance 
+<img width="639" height="329" alt="image" src="https://github.com/user-attachments/assets/4488acbd-565b-4824-a5c4-4549c2e54fdc" />
+hey like we use in partition 
+1. ca consistency  and avilablty - means db always updated and new info user ko de and available rahe always
+this can only be acheive if whole data is in single db so for small projects
+2. cp : in this we dont availabel always user have to waith more imp is consitent always updated details and partition is also can be there so lets take eg if one of db get down then whole sys and user have to wait till all info session info updated to some other db and user req is redrect to that db
+used in bank where every info is first need to update before doing further changes
+
+3. ap : so partiton is there and availabel always so even one partition is down user will get unupdated data and instead of waiting user for updated data mostly used in insta where even account holder upload video still if req come u will give slate data as its not nescessary that immediately show user the changes 
