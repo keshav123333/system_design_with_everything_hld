@@ -174,4 +174,10 @@ load balcner in real world combine two or more algo and use it
 and for this too there are ways to do
 - intervals: u have to check ur server on certain intervals is it active
 - timout : like if a req is takign more then threshold time then check like one eq taking 10 sec to process but onavg all req only take few ms so check if the code failed or serve rproblem
-- threshold : after evry certain req check how much req fails if no. of failed req if more analysis why it fail does there any problem 
+- threshold : after evry certain req check how much req fails if no. of failed req if more analysis why it fail does there any problem
+
+-------
+# Distributed Database
+
+listen big comapny dont have only one db from which whole world acess the internet no if india india will have its own db and us will have its own db where it will update 
+but like understand like indian db will not have all content as its really big it will have content only used in india freq if user acess to some other data our db will contact earby db for that data 
