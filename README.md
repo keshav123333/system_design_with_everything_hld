@@ -266,3 +266,53 @@ this can only be acheive if whole data is in single db so for small projects
 used in bank where every info is first need to update before doing further changes
 
 3. ap : so partiton is there and availabel always so even one partition is down user will get unupdated data and instead of waiting user for updated data mostly used in insta where even account holder upload video still if req come u will give slate data as its not nescessary that immediately show user the changes 
+
+
+-----
+# Msg queue 
+<img width="462" height="339" alt="image" src="https://github.com/user-attachments/assets/f2996322-af9a-4444-92c9-95da6ac5a9a4" />
+two type of req sync async so we can mive async to msg queue now device will do other work and msg queue will responsible for all work related to that req and when res come then only it will return 
+ <img width="775" height="393" alt="image" src="https://github.com/user-attachments/assets/b628e976-3a9b-4270-a7e1-79204c887521" />
+ab u see above site will ad the req in queue and msg que will one by one excute it
+and this req excute in some ways in msg que 
+1. fifo : unorder list in order it will excute the req if some fail it will return and move ahead
+2. priority que: with evry req priority is associated so most priority will execute first
+3. <img width="758" height="494" alt="image" src="https://github.com/user-attachments/assets/0e2c03b3-4e8b-4b60-a523-cb3116241c37" />
+and these two are other type in one consumer pull req from msg que and in other que push req to consumer or email service or other service
+
+### Pub sub model 
+<img width="564" height="349" alt="image" src="https://github.com/user-attachments/assets/fb84ff90-4f9f-42d8-aa3f-993a91ee3b2d" />
+in pthis publisher publish msg que first check subscriber is live and active or dead if active then only send data  to add suscriber an sometime subscriber also pull msg from que 
+<img width="568" height="381" alt="image" src="https://github.com/user-attachments/assets/ba84d78c-e06c-46f1-8b70-8af8c24fe4c7" />
+factor of msg queue :
+<img width="487" height="363" alt="image" src="https://github.com/user-attachments/assets/dd0d16db-9861-4d0d-8098-411fda1bd87f" />
+msg order priority que and async msg consumer random hota and posion msg vo jo ek baar fail so  dont send it again again 
+
+4 . msg queu also maintain dead queu which maintain the request that are failed and what their ouput so can be given to consumer 
+5. duplicacy : msg queue should remove the msg from que once excuted as there may be duplicate processing may happen
+
+use case of msg que:
+it can used for async req also can act as load balcncer as it also maintain and keep req and send it desired places 
+- can be used as deffered sys do later type like u schedule somthing or like monitoring or scheduling process
+- 🟥 but it cant be used with real time apps and its costly so if needed then only use if u can directly process req do it
+
+------
+# faults in our system 
+
+<img width="457" height="274" alt="image" src="https://github.com/user-attachments/assets/7e901174-0ad5-48b2-a2d1-bcc82019d689" />
+<img width="367" height="377" alt="image" src="https://github.com/user-attachments/assets/d88b2cfd-0016-475e-ae82-eac455521c97" />
+<img width="371" height="203" alt="image" src="https://github.com/user-attachments/assets/bcd8aa80-2ffb-497b-aa89-cd84b144cc62" />
+-----
+# monitoring sys
+
+<img width="477" height="376" alt="image" src="https://github.com/user-attachments/assets/20af8e06-3e0b-4a02-b6fe-a0deae3553d2" />
+
+2. Api monitoring :
+we have to monitor our api time to time throughput: how many req a server can handle and if req is inc on any server then its limit fixit
+2. check error codes to ensue if ur sys is working fine if not what r error
+3. latency : check p90 mean 90 percent of ur req is processed in how much time and same u can say for p50 like how much time it take to process 50 percent of req if this time gap is more like ur 50 percent req is processig in 4 sec but p90 is 12 sec ur having a problem
+
+also monitor the hardware :
+<img width="761" height="517" alt="image" src="https://github.com/user-attachments/assets/79035934-e339-4365-b037-799b3eb2f2b4" />
+
+# iske aage video jaha tujhe sys desgin sikhya gaya hai
