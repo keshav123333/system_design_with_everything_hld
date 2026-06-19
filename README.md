@@ -181,3 +181,36 @@ and for this too there are ways to do
 
 listen big comapny dont have only one db from which whole world acess the internet no if india india will have its own db and us will have its own db where it will update 
 but like understand like indian db will not have all content as its really big it will have content only used in india freq if user acess to some other data our db will contact earby db for that data 
+
+for this u can do differetn things first
+- replication :same data is copied everywhere in other database too
+- distribute: same  data is distributed in two or more db
+
+## Replication 
+keeping copy of data it helps in 
+- spof : if one fail other handle it , availablty fast res : as if two db is there so it can handle more req and fst res will be there as req is distributed among , throughput is more
+
+**Types of replication**:
+1. single leader replication: single leader directly recvie req and update its slave db
+<img width="553" height="260" alt="image" src="https://github.com/user-attachments/assets/f471a1a4-a5d0-4bec-ad2b-0cf4228dd45c" />
+this is also two types
+one is :
+<img width="579" height="347" alt="image" src="https://github.com/user-attachments/assets/b2825720-0623-458b-b672-887fd24cede8" />
+as above seen in image u can see that there can be like req came leader update db and give ok res but in backend also async update salve node
+disadv :
+if in this b/w leader fail so update will not be in slave db
+<img width="532" height="314" alt="image" src="https://github.com/user-attachments/assets/24a77b5f-6250-46f5-9935-ea93f69ed04a" />
+
+
+
+second sync approach :
+<img width="553" height="385" alt="image" src="https://github.com/user-attachments/assets/f11b9a9b-c6fc-4923-b839-97f78fc62d78" />
+so as u can see above final response only go when all slve db gets updated 
+adv and disadv of sync :
+<img width="367" height="244" alt="image" src="https://github.com/user-attachments/assets/4c358e75-8da2-4727-95f5-c533690cbafa" />
+
+### Now if new db connected sho how it will connected to leader db 
+so first new db will come and in this new db all content of db will be copied so tak that this copying started at 12 pm and finished at 3 pm so now these 4 hour updated content also needed to update in this db so now this 4 hr content will get coipied then finally get connected to leader
+
+ques : if leader fail so the db which will be most updated will be next candidates 
+
