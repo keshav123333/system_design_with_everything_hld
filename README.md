@@ -212,5 +212,43 @@ adv and disadv of sync :
 ### Now if new db connected sho how it will connected to leader db 
 so first new db will come and in this new db all content of db will be copied so tak that this copying started at 12 pm and finished at 3 pm so now these 4 hour updated content also needed to update in this db so now this 4 hr content will get coipied then finally get connected to leader
 
-ques : if leader fail so the db which will be most updated will be next candidates 
+ques : if leader fail so the db which will be most updated will be next candidates for leader and every other will make this change in their system 
 
+2. Multileader replication :
+<img width="573" height="389" alt="image" src="https://github.com/user-attachments/assets/fc62dd8a-8157-43c7-b353-3cc1ade8878e" />
+so here more leader is there and if u1 change in d1 it will tell its slve node and other leader node other leader node will then do thier updates
+better performance and collabrative approach
+
+<img width="714" height="414" alt="image" src="https://github.com/user-attachments/assets/1c50ede7-7165-4c7b-9f12-262451cb08c6" />
+as u can see in this image here u1 rename file f1 so db1 acept the change and u2 also same time change f1 name db2 also accept when db1 db2 update this in each other they will realise that its conflicting so to avoid this there are few methods u can see in img
+1. acc. to time who write last thier change will show
+2. who is more poweful u1 u2 whose change will remain
+3. application will ask user that two changes maded which name u prefer
+
+3. Leader less replication :
+<img width="641" height="385" alt="image" src="https://github.com/user-attachments/assets/b740a3e4-ddcd-43f7-b1f0-4dff381f2373" />
+as above u can see that user req is go to every db read and write both req is go to every db it introduce some latency and take case u1 update db1 and sudden;ly send read req so from where this read req will handled if db2 still updating its prev data there can be chance that user may get stale data 
+
+for solving this we had a mthod called as quorem 
+**quorem**
+so in this we send okay to user when majortiy db is updated example 3 db total and 2 of them has updated db1 db2 and db3 didnt updated yet but still will send okay when user immediately send read req  so this req also go to all db as leader less now 2 of them give updated and 1 give stale old output as updated is in mojority we will give that as res 
+
+
+-----
+# partition
+as name suggest we will now partition the system or devide the data in more then on db such every db contein equal data not db should be overloaded or underloaded
+
+1. partition by key:
+like u store 1 to 50000 data in p1 partiton 1 and 50000 to 100000 in p2 so like whwenver req come it will go to respective partition but if req from 1 to 50000 inc then one partition is become hotspot which i not goof
+
+2. partition by hashfunc :
+so in this we try to random allcoate  data in partiton using some hash func but still chance that 1 db partiton become hotspot
+
+3. partiton by index
+liten in db when we search material = steel it dont go to whole big table and search whole row it go to a index col where it find where data is steel and then traverse that row only
+<img width="1207" height="606" alt="image" src="https://github.com/user-attachments/assets/60344d92-432b-4d58-ad9e-2dd843f37cd8" />
+like same if ur p1 contain db of car form 200 500 and it have blue cas from some index so every partition will have their index table req first chck if data it needed availble if not move to next db
+disadv in this to he have tranverse to every db which inc load on db
+
+4. global index
+we maintain a global index of data if ser come for spefic first req go thier from thier it fetch where his target data is availabel and go thier direct 
