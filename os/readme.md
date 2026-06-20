@@ -26,3 +26,6 @@ if a page size is 2b and 4 pages are there so now process size is 8byte and 2^3 
 
 -----
 # time to take process the req 
+tlb is cache where most used pages get saved and time req to process a process is 
+teff=h(timetlb+timemm)+(1-h)(time tlb+2tmm) so we can like if hit then it take from tlb and get the page from main memory if not then vis versa 
+do question what is tag bit and all fully assicuate h
