@@ -22,3 +22,7 @@ page contain its own stck and array and extra bits
 and page table is stored in main memory so two time acess karte during a processing of a process first page table to know where is partition and pages are
 ## theere is cal culaion see notes 
 if a page size is 2b and 4 pages are there so now process size is 8byte and 2^3 so 3 bit ka address chaiye hoga usko store ke liye like ek page ab 2 byte and 8 pages hai main meroty see notes 
+
+
+-----
+# time to take process the req 
