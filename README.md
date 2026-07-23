@@ -130,9 +130,26 @@ no sql use document to store info
 # YAAR YAHA PE CACH WALA PART SAVE NI KIYA THA USKO VIDEO SE EK BAAR LIKH KE ADD KAR DE PLEASE AND SAMJH LE  AND YAHA PE NO SQL KA BHI MISSING HAI TYPES AND ALL VO BHI KAR LE 
 
 
+# Cache 
 
+1. maan koi info jo baar baar retirve so db pe pressure so uss info ko we save in backend itself in cache or frontend brpwser cache 
+2. cache hit means we found miss means u know
+3. ttl time to live for how much time cache will be save the data
 
+## cache strategies 
+1. rtc (read through cache): req frontend ->backend ->  cache if yes toh de if no -> db find dta -> cache store it -> backend -> fronte
+2. wtc(wrtie through cache): backend se rite req came -> first written int cache directly -> then db mein wrtie => majorl use in stock or real time data tpe where like latest info will be fetched more
+3. wac(write around cache )-> backend se write -> direct db mein
+ if read req go req frontend ->backend ->  cache if yes toh de if no -> db find dta -> cache store it -> backend -> fronted ye follow  used twitter insta etc
 
+4. wbc (write back cache)-> in this like if we write req comes -> cache will store and give okay response -> whereas in parallel async it update the detail in db and read data same wc and rtc ki tarh
+here as u can notice that speed> conistency as in swiggy or other where transcation order ststus or order ststus change freq we need tolike give freq update and all update in db will also async 
+
+## cahce eviction
+1. lru  least recent used-> data which is least recent used will be deleted
+2. most recent used : used in youtube or in programm where like recent watched thing will not going to played again
+3. lfu least freq used : which is used less freq
+4. lifo stack type and fifo is there 
 
 ----
 
