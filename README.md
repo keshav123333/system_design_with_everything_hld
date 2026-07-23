@@ -127,6 +127,14 @@ no sql use document to store info
 ## No sql 
 <img width="471" height="379" alt="image" src="https://github.com/user-attachments/assets/d6b2a52c-41d0-4a00-b198-d5d5387badd2" />
 
+### types of no sql
+1. key value: mostly use in cache think of it as a hasmap one key and correspnd to it its a value it can be json or something redis or cache us this that why its fast
+2. document : like {user:"keshav".....} like this data store in mongo and etc so it mostly dont have full fixed str so most relaxation in this
+3. column db:  instead of storing table as row it store as column so like there a column in which view are there u need median view u can dirctly acess only view col data through this and fastly eg snowflake 
+4. graph dn :use node and edges and node and edges have their own property like node can have name class then a reln edge where it define studies in  then class info and this studies in edge can also have some info  
+
+------
+
 # YAAR YAHA PE CACH WALA PART SAVE NI KIYA THA USKO VIDEO SE EK BAAR LIKH KE ADD KAR DE PLEASE AND SAMJH LE  AND YAHA PE NO SQL KA BHI MISSING HAI TYPES AND ALL VO BHI KAR LE 
 
 
