@@ -3,6 +3,12 @@
 # public /private ip
 <img width="534" height="425" alt="image" src="https://github.com/user-attachments/assets/45fc09a8-6eff-420e-bf32-4378d273eeab" />
 upar dekh laptop and mobile have give a private ip and vo router ke thorugh public ip mein ja raha 
+niche dekh jaise niche dekh private ke liye same public bas port num assign public i[ same for router bas port assign so jab reply google toh vo port num ke saht router fir ushi ko reply 
+| Device | Original Source/private ip | Router changes it to   |
+| ------ | ---------------- | ---------------------- |
+| Laptop | 192.168.1.2:5000 | **49.36.100.20:40001** |
+| Phone  | 192.168.1.3:5000 | **49.36.100.20:40002** |
+| TV     | 192.168.1.4:5000 | **49.36.100.20:40003** |
 
 
 n
