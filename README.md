@@ -355,3 +355,20 @@ also monitor the hardware :
 <img width="761" height="517" alt="image" src="https://github.com/user-attachments/assets/79035934-e339-4365-b037-799b3eb2f2b4" />
 
 # iske aage video jaha tujhe sys desgin sikhya gaya hai
+
+# http
+
+req res model pe based and tcp conn follow
+1. https 1.0 
+<img width="386" height="424" alt="image" src="https://github.com/user-attachments/assets/60b3cfb4-f55e-4247-80a7-559137c51292" />
+yaha aisa follow  slow for modern website
+as maan ek cheez ke liye conn banta fir close pehle html site and kuch images toh sahi as utna data hi apas mein exchange ab ke hisab se sahi i hai
+
+2. http 2.0
+<img width="339" height="378" alt="image" src="https://github.com/user-attachments/assets/f256d634-26db-469e-8bcf-d31c79444c53" />
+
+yaha pe ja sakta hai but maan le res of b ni aaya bahut der tak toh yaha bhi sare kaam chod ke b k bhhjna chahe 
+
+3. <img width="332" height="337" alt="image" src="https://github.com/user-attachments/assets/afe908bb-4293-4b77-bbe3-da7388378c12" />
+ ye sahi as tls build in so always encryoted and also there stream mein data tranfer and independent hoti sari strea ek dusre se so if ek ruk bhi jaye toh baiyon ko koi zayda affect ni hota
+and baar baar handshake ni if ek baar ho agya toh save kar leta
