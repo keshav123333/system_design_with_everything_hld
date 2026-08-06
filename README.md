@@ -11,7 +11,9 @@ niche dekh jaise niche dekh private ke liye same public bas port num assign publ
 | TV     | 192.168.1.4:5000 | **49.36.100.20:40003** |
 
 
-n
+# tcp udp
+<img width="650" height="367" alt="image" src="https://github.com/user-attachments/assets/5e2fd687-752e-4c88-a353-28dab40113ca" />
+baki note book se padh jaise three way handshake hota and har pkt ya data ke sath fir ack toab dusra data jataif ack ni toh fir se data bhejta aur bhi bahut kuch 
 
 1. There is db and to accesss some info through this db we need to write query and fetch info which is hard so application layer is introduced and it ease the process and make it more interactive it use rest api to fetch info and show and by this we can secure our db to as directly giving acess to customer of our main db is not safe 
 
