@@ -372,3 +372,15 @@ yaha pe ja sakta hai but maan le res of b ni aaya bahut der tak toh yaha bhi sar
 3. <img width="332" height="337" alt="image" src="https://github.com/user-attachments/assets/afe908bb-4293-4b77-bbe3-da7388378c12" />
  ye sahi as tls build in so always encryoted and also there stream mein data tranfer and independent hoti sari strea ek dusre se so if ek ruk bhi jaye toh baiyon ko koi zayda affect ni hota
 and baar baar handshake ni if ek baar ho agya toh save kar leta
+
+```draw.io
+      Load Balancer
+                  ↓
+        "Which backend server?"
+                  ↓
+             Backend
+                  ↓
+        "Which database?"
+                  ↓
+       India DB / USA DB / ...
+````
