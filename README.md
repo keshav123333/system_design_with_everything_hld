@@ -423,3 +423,19 @@ TCP mainly:
 - Flow control → receiver ke according sending rate
 - Congestion control → network congestion ke according sending rate
 - Port numbers → kis application/process ko data dena hai
+
+ayah pe ack aise aata ki 1 2 3 4 gaye so 1 mil gaya toh ack 5 means 5 behj bhej diya then 2 ho gaya toh ack 6 aaya ki 6 behj 4 gaya but 3 miss so ack 3 baar baar ayega fir sneder 3 vapis behjjega then ack ack 7 ayega then jab 4 ho jayega toh ack 8 ayega aise correction ke window update hota 
+
+
+# network layer 
+maan tere source hai something ip add 
+goggle ka ip Destination = Google IP
+142.250.x.x
+so ab tune req bheji src and dest ip change ni hoti but google ke pas direct ni jaa sakte na so sun har n/w jo aps m connected wo share ki main yaha pe hu same google bhi aise apne aas pas ke n/w ko bata 
+but ingenral hum kya karte like humare pas table hoti ki 142.250 ... ye wale ip merse connected router a ke pas hai maan tune facebook uska ip 145.253 ye wal ip router b ke pas har isp router ye maintain and aise sirf next place pe sen waha se vo final postion pe pehcta 
+
+and yaha next place determine n/w layer and iske protocol dekhte and karte
+
+# data link layer 
+
+ye local n/w mein 
