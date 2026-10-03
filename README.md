@@ -438,4 +438,9 @@ and yaha next place determine n/w layer and iske protocol dekhte and karte
 
 # physcial layer 01 bits ya light se data bhejte usse like wire se ya kisi se bhi
 
-ye local n/w mein 
+# data link 
+ip ko mac layer mein change bas 
+tune n/w layer mein next kha behjtna ye tai kar liya but next bhenjne ke liye next ka mac add chaiye yaha pe karta hai kaam ye layer 
+data segment mein src dest ip change ni sirf mac add change hote src and dest ke har hop pe like n/w bolta next kaha bejna and ip deta and data link usse mac add deti 
+ye local mein bhi same cheez 
+
