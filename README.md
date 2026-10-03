@@ -436,6 +436,6 @@ but ingenral hum kya karte like humare pas table hoti ki 142.250 ... ye wale ip 
 
 and yaha next place determine n/w layer and iske protocol dekhte and karte
 
-# data link layer 
+# physcial layer 01 bits ya light se data bhejte usse like wire se ya kisi se bhi
 
 ye local n/w mein 
