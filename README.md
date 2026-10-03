@@ -1,5 +1,22 @@
 # system_design_with_everything_hld
 
+# Arp
+jaise maan tu router se connected router have public ip u have private ip
+okay now u want to req send outer ur local network
+now u have router ip but maine problem mac adress zaruri toh ab arp help ye ip-> mac adress deti 
+ye utlta bhi use jab router ke pas result aaya ab ye result kiska ye arp se hi pata lagata mac add. through result lene wale ke ip add. se 
+
+# NAT
+Suppose u have a private ip 
+Private IP = 192.168.1.10
+ow u want to acess google so kaise 
+so nat kya karta tere private add and port ko public mein change kar deta 
+Private side             Public side
+
+192.168.1.10:50000  ↔  49.20.30.40:62001 
+now google ke pas public side jayegi vo reply jab router ke pas reply firse ye table dekhega and public ip se private ip nikala and tranfer 
+
+
 # public /private ip
 <img width="534" height="425" alt="image" src="https://github.com/user-attachments/assets/45fc09a8-6eff-420e-bf32-4378d273eeab" />
 upar dekh laptop and mobile have give a private ip and vo router ke thorugh public ip mein ja raha 
