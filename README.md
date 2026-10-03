@@ -401,3 +401,25 @@ and baar baar handshake ni if ek baar ho agya toh save kar leta
                   ↓
        India DB / USA DB / ...
 ````
+
+
+
+
+# Osi layers
+
+## Application Layers 
+you send hello 
+ab hello behja toh http https hai 
+dns se ip add laya jata smtp protocol use hoga ki kya ye sab yaha pe tai hota
+
+## transport 
+yaha pe ye ensure ki data sahi se jaaye ki kaise jayega ya send hhoga dest pe 
+tcp udp aate do protocol ike isme data ko toda jata then tcp alag tarah se behjta and udp alag tarah se behjta 
+TCP mainly:
+- Connection establishment → 3-way handshake
+- Reliable delivery → ACKs
+- Ordering → sequence numbers
+- Lost data → retransmission
+- Flow control → receiver ke according sending rate
+- Congestion control → network congestion ke according sending rate
+- Port numbers → kis application/process ko data dena hai
