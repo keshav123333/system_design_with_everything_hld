@@ -448,6 +448,8 @@ tune n/w layer mein next kha behjtna ye tai kar liya but next bhenjne ke liye ne
 data segment mein src dest ip change ni sirf mac add change hote src and dest ke har hop pe like n/w bolta next kaha bejna and ip deta and data link usse mac add deti 
 ye local mein bhi same cheez 
 
+isme hi tu frame mein error detect ki virus ya kuch kharab error toh ni crc ya kuch use karke 
+
 
 
 application pe data 
