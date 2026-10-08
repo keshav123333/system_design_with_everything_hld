@@ -430,6 +430,8 @@ ayah pe ack aise aata ki 1 2 3 4 gaye so 1 mil gaya toh ack 5 means 5 behj bhej 
 # network layer 
 
 ye responsible hoti path kaunse se jayeg data pkt from one src to different src kaunsa pth ye decide karti
+
+ospf se decide karta kaunsa part kam jaldi aphucha dega 
 maan tere source hai something ip add 
 goggle ka ip Destination = Google IP
 142.250.x.x
